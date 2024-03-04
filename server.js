@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 const mongoose = require("mongoose");
 
-const budgetSchema = require("./models/budget_schema");
+const budgetSchema = require("./models/budgetSchema");
 let url = 'mongodb://127.0.0.1:27017/budget';
 
 
@@ -61,4 +61,4 @@ app.post("/addNewBudget", (req, res) => {
 
 app.listen( port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
-} )
+} )qq
